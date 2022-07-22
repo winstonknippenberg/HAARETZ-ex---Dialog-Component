@@ -1,0 +1,41 @@
+.App {
+  font-family: sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+code,
+pre {
+  background-color: #eee;
+  font-family: monospace;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+pre {
+  display: block;
+  padding: 6px 12px;
+  margin-right: 12px;
+}
+
+.dialogOverlay {
+  background-color: blue;
+  border: 2px blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+}
+.insideContent {
+  font-size: 48pt;
+  color: red;
+}
+/* 
+.outsideDialog {
+  border: 4px red;
+  padding: 30px;
+} */
