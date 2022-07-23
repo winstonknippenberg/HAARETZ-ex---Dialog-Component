@@ -14,7 +14,11 @@ export function DialogContent({
   const { setDialogRef } = useDialogContext();
 
   return (
-    <dialog className={dialogClassName} ref={setDialogRef} open={true}>
+    <dialog
+      className={dialogClassName ? dialogClassName : 'dialog'}
+      ref={setDialogRef}
+      open={true}
+    >
       <div role="document" className={documentClassName}>
         {children}
       </div>

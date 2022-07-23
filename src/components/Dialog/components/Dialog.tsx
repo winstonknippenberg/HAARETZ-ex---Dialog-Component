@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { PropsWithChildren, useEffect } from 'react';
+import { useEffect } from 'react';
 import ReactPortal from '../../ReactPortal/ReactPortal';
 
 import './dialogStyles.css';

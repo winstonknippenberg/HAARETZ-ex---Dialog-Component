@@ -36,7 +36,6 @@ export const DialogContextProvider = ({
 
 export const useDialogContext = () => {
   const context = useContext(DialogContext);
-  console.log({ context });
   if (!context) {
     throw new Error(
       `Inner parts of Dialog component cannot be used outside of Dialog`

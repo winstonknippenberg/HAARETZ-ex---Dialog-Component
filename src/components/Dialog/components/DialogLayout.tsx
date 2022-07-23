@@ -24,7 +24,6 @@ function hasFocusableElements(container: HTMLElement) {
     },
   });
   const node = walker.nextNode();
-  console.log({ node });
   return !!node;
 }
 

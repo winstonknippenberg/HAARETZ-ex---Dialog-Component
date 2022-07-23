@@ -11,7 +11,7 @@ export default function App() {
 
       <Dialog handleClose={() => setIsOpen(false)} isOpen={isOpen}>
         <Dialog.Layout>
-          <Dialog.Content>hello</Dialog.Content>
+          <Dialog.Content>{/*insert some content here*/}</Dialog.Content>
         </Dialog.Layout>
       </Dialog>
     </main>
