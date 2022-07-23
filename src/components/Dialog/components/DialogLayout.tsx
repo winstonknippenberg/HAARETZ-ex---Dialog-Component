@@ -9,7 +9,9 @@ interface DialogLayoutProps {
   children: ReactElement;
 }
 
-//I took this function from Radix source code https://github.com/radix-ui/primitives/blob/main/packages/react/focus-scope/src/FocusScope.tsx#L207-L233
+//I took this function from Radix source code
+// https://github.com/radix-ui/primitives/blob/main/packages/react/focus-scope/src/FocusScope.tsx#L207-L233
+
 function hasFocusableElements(container: HTMLElement) {
   const walker = document.createTreeWalker(container, NodeFilter.SHOW_ELEMENT, {
     acceptNode: (node: any) => {
@@ -31,7 +33,6 @@ export function DialogLayout({ children, className }: DialogLayoutProps) {
   const overlayRef = useAriaHidden();
 
   const isFocusTrapActive = useMemo<boolean>(() => {
-    console.log({ dialogRef });
     return !!(dialogRef && hasFocusableElements(dialogRef));
   }, [dialogRef]);
 
