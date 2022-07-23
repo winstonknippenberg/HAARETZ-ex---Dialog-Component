@@ -1,6 +1,6 @@
-#Dialog Exercise
+# Dialog Exercise
 
-####Features
+#### Features
 
 - Focus is automatically trapped inside the dialog
 - Focus will return to the element that was focused before opening.
@@ -10,13 +10,13 @@
 - Component type validation for correct anatomy usage.
 - While Dialog is open, outside elements are set to `aria-hidden = "true"`
 
-#####External Libraries
+##### External Libraries
 
 - [aria-hidden](https://github.com/theKashey/aria-hidden)
 - [Focus-Trap](https://github.com/focus-trap/focus-trap-react)
 - [use-callback-ref](https://github.com/theKashey/use-callback-ref)
 
-####Example Usage
+#### Example Usage
 
 ```typescript
 import Dialog from './components/Dialog';
@@ -38,7 +38,7 @@ export default function App() {
     </main>
 ```
 
-####API Reference
+#### API Reference
 
 **Dialog**
 | Prop | Type | Default Value |  
