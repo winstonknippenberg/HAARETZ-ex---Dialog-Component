@@ -35,11 +35,14 @@ export function DialogLayout({ children, className }: DialogLayoutProps) {
     return !!(dialogRef && hasFocusableElements(dialogRef));
   }, [dialogRef]);
 
-  const handleClickEsc = (event: KeyboardEvent) => {
-    if (event.key === 'Escape') {
-      handleClose(event);
-    }
-  };
+  const handleClickEsc = useCallback(
+    (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        handleClose(event);
+      }
+    },
+    [handleClose]
+  );
 
   const handleClickOutside = useCallback(
     (event: Event) => {
@@ -47,7 +50,7 @@ export function DialogLayout({ children, className }: DialogLayoutProps) {
         handleClose(event);
       }
     },
-    [dialogRef]
+    [dialogRef, handleClose]
   );
 
   useEffect(() => {
